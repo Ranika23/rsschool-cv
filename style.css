@@ -58,9 +58,10 @@
 
 .main__photo-background {
   position: absolute;
-  width: 50%;
-  top: -100px;
-  right: 0;
+  width: 70%;
+  top: -125px;
+  right: -95px;
+  transform: rotate(-10deg);
 }
 
 .footer {
