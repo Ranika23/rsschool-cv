@@ -40,7 +40,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
+  z-index: 999;
 }
 
 .main {
@@ -56,12 +57,39 @@
   gap: 100px;
 }
 
+.logo {
+  margin-top: 5px;
+  z-index: 99;
+}
+.nav-menu {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 41.5px;
+  transition: 0.2s;
+}
+.nav-menu li {
+  background-image: linear-gradient(to right, #403F3D, #403F3D);
+  background-repeat: no-repeat;
+  background-size: 10px 0px;
+  background-position: center bottom;
+}
+.nav-link {
+  padding: 0;
+  color: #403F3D;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
 .main__photo-background {
   position: absolute;
   width: 70%;
-  top: -125px;
-  right: -95px;
+  top: -115px;
+  right: -105px;
   transform: rotate(-10deg);
+  z-index: 9;
 }
 
 .footer {
