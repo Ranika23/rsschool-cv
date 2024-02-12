@@ -83,6 +83,15 @@
   background-size: 10px 0px;
   background-position: center bottom;
 }
+.header__nav-menu li::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  padding-top: 5px;
+  border-bottom: 2px solid #e35b17;
+  transition: 0.5s;
+}
 .header__nav-link {
   padding: 0;
   color: #403F3D;
@@ -142,12 +151,15 @@
   border-bottom: 1px solid #e35b17;
   border-left: 1px solid #e35b17;
   background: #fdf9f5;
+  color: #403F3D;
   box-shadow: inset -1px 1px 5px 0px #d99878;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .about__buttons button a {
   padding: 0;
-  color: #403F3D;
+  color: inherit;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -218,11 +230,13 @@
   border-bottom: 1px solid #e35b17;
   border-left: 1px solid #e35b17;
   background: #fdf9f5;
+  color: #403F3D;
   box-shadow: inset -1px 1px 5px 0px #d99878;
+  cursor: pointer;
 }
 .project-item__description button a {
   padding: 0;
-  color: #403F3D;
+  color: inherit;
   text-decoration: none;
   font-weight: 600;
   transition: 0.5s;
@@ -234,30 +248,31 @@
 .project-item__img5 {
   width: 50%;
   height: 100%;
+  transition: 0.5s;
 }
 .project-item__img1 {
   background-image: url(assets/img/project_img1.png);
-  background-size: 100%;
+  background-size: 120%;
   background-position: center;
 }
 .project-item__img2 {
   background-image: url(assets/img/project_img2.png);
-  background-size: auto 100%;
+  background-size: auto 120%;
   background-position: start;
 }
 .project-item__img3 {
   background-image: url(assets/img/project_img3.png);
-  background-size: 100%;
+  background-size: 120%;
   background-position: center;
 }
 .project-item__img4 {
   background-image: url(assets/img/project_img4.png);
-  background-size: auto 110%;
+  background-size: auto 130%;
   background-position: top right;
 }
 .project-item__img5 {
   background-image: url(assets/img/project_img5.png);
-  background-size: auto 110%;
+  background-size: auto 130%;
   background-position: top right;
 }
 
@@ -357,5 +372,42 @@
 @media (min-width: 700px) {
   .main__photo-background {
     width: 593px;
+  }
+}
+
+@media (hover: hover) {
+  .header__nav-menu li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+  }
+  .about__buttons button:hover {
+    background: #c74312;
+    color: white;
+  }
+  .project-item__img1:hover {
+    background-size: 100%;
+  }
+  .project-item__img2:hover {
+    background-size: auto 100%;
+  }
+  .project-item__img3:hover {
+    background-size: 100%;
+  }
+  .project-item__img4:hover {
+    background-size: auto 110%;
+  }
+  .project-item__img5:hover {
+    background-size: auto 110%;
+  }
+  .project-item__description button:hover {
+    background: #c74312;
+    color: white;
+  }
+  .footer-container__contacts img:hover {
+    align-self: flex-start;
+  }
+  .icon-github:hover,
+  .icon-discord:hover {
+    align-self: flex-start;
   }
 }
