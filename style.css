@@ -17,11 +17,11 @@
 .body {
   width: 100%;
   margin: 0;
-  background: #f5ede5;
+  background: #fff8f6;
 }
 .body-container {
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1600px;
   height: 100%;
   min-height: 100vh;
   margin: 0 auto;
@@ -34,7 +34,7 @@
   font-style: normal;
   line-height: 150%;
   color: #381908;
-  background: #f5ede5;
+  background: #fff8f6;
 }
 
 .header {
@@ -53,9 +53,9 @@
 .main {
   position: relative;
   flex: 1;
-  width: 100%;
+  max-width: 788px;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 40px;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@
 .about__self-presentation {
   line-height: 30px;
   font-weight: 400;
-  color: #656460;
+  color: #403F3D;
 }
 
 .about__buttons {
@@ -205,7 +205,7 @@
   font-family: Inter-Regular;
 }
 .project-item__description div {
-  color: #656460;
+  color: #403F3D;
 }
 
 .project-item__description button {
@@ -252,13 +252,13 @@
 }
 .project-item__img4 {
   background-image: url(assets/img/project_img4.png);
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: auto 110%;
+  background-position: top right;
 }
 .project-item__img5 {
   background-image: url(assets/img/project_img5.png);
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: auto 110%;
+  background-position: top right;
 }
 
 .footer {
@@ -294,8 +294,68 @@
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  color: #656460;
+  color: #403F3D;
   font-family: Inter-Regular;
   width: 100%;
   height: 30%;
+}
+@media (max-width: 770px) {
+  .project-item__description h3 {
+    font-size: 1.2em;
+  }
+  .project-item__description div {
+    font-size: 12px;
+  }
+}
+@media (max-width: 750px) {
+  .about__welcom {
+    font-size: 2em;
+    line-height: 45px;
+  }
+  .about__self-presentation {
+    font-size: 14px;
+  }
+}
+@media (max-width: 660px) {
+  .projects {
+    width: 100%;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__welcom {
+    font-size: 1.5em;
+    line-height: 35px;
+  }
+  .about__self-presentation {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .project-item__img1, 
+  .project-item__img2, 
+  .project-item__img3, 
+  .project-item__img4, 
+  .project-item__img5 {
+    display: none;
+  }
+  .project-item__description h3 {
+    font-size: 1.5em;
+  }
+  .project-item__description div {
+    font-size: 16px;
+  }
+  .project-item__description {
+    width: 100%;
+}
+}
+@media (max-width: 400px) {
+  .about {
+    width: 70%;
+}
+}
+@media (min-width: 700px) {
+  .main__photo-background {
+    width: 593px;
+  }
 }
