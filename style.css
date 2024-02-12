@@ -4,6 +4,12 @@
   src: url(assets/fonts/InterTight-Italic-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Inter-Regular;
+  font-weight: 400;
+  src: url(assets/fonts/Inter-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -40,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 999;
 }
 
@@ -60,6 +66,7 @@
 .header__logo {
   margin-top: 5px;
   z-index: 99;
+  font-family: Inter-Regular;
 }
 .header__nav-menu {
   width: 100%;
@@ -107,11 +114,13 @@
   font-size: 2.5em;
   line-height: 60px;
   font-weight: 600;
+  font-family: Inter-Regular;
 }
 
 .about__self-presentation {
-  line-height: 25px;
+  line-height: 30px;
   font-weight: 400;
+  color: #656460;
 }
 
 .about__buttons {
@@ -157,6 +166,7 @@
 .projects h2 {
   font-size: 1.5em;
   margin: 0;
+  font-family: Inter-Regular;
 }
 .projects h2::after {
   content: "";
@@ -192,12 +202,17 @@
 .project-item__description h3 {
   font-size: 1.5em;
   margin: 0;
+  font-family: Inter-Regular;
 }
+.project-item__description div {
+  color: #656460;
+}
+
 .project-item__description button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 110px;
   height: 35px;
   border-radius: 20px;
   border-bottom: 1px solid #e35b17;
@@ -209,6 +224,7 @@
   padding: 0;
   color: #403F3D;
   text-decoration: none;
+  font-weight: 600;
   transition: 0.5s;
 }
 .project-item__img1,
@@ -258,7 +274,7 @@
   justify-content: center;
   align-items: center;
   width: 192px;
-  height: 120px;
+  height: 110px;
 }
 
 .footer-container__contacts {
@@ -266,7 +282,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 .footer-container__contacts img{
   width: 48px;
@@ -279,7 +295,7 @@
   align-items: center;
   font-size: 12px;
   color: #656460;
-  font-style: normal;
+  font-family: Inter-Regular;
   width: 100%;
-  height: 50%;
+  height: 30%;
 }
