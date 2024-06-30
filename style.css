@@ -217,7 +217,7 @@
   width: 50%;
   height: 100%;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 .project-item__description h3 {
   font-size: 1.5em;
@@ -255,7 +255,8 @@
 .project-item__img3,
 .project-item__img4,
 .project-item__img5,
-.project-item__img6 {
+.project-item__img6,
+.project-item__img7 {
   width: 50%;
   height: 100%;
   transition: 0.5s;
@@ -289,6 +290,11 @@
   background-image: url(assets/img/project_img6.png);
   background-size: auto 100%;
   background-position: top center;
+}
+.project-item__img7 {
+  background-image: url(assets/img/project_img7.png);
+  background-size: auto 100%;
+  background-position: top right;
 }
 
 .footer {
@@ -367,7 +373,8 @@
   .project-item__img3, 
   .project-item__img4, 
   .project-item__img5,
-  .project-item__img6 {
+  .project-item__img6,
+  .project-item__img7 {
     display: none;
   }
   .project-item__description h3 {
@@ -435,6 +442,9 @@
     background-size: auto 110%;
   }
   .project-item__img6:hover {
+    background-size: auto 110%;
+  }
+  .project-item__img7:hover {
     background-size: auto 110%;
   }
   .project-item__description button:hover {
