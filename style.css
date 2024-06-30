@@ -102,10 +102,11 @@
 .main__photo-background {
   position: absolute;
   width: 85vmin;
-  top: -110px;
+  top: -90px;
   right: -105px;
-  transform: rotate(-10deg);
+  /*transform: rotate(-0deg);*/
   z-index: 9;
+  transition: 0.2s;
 }
 
 .about {
@@ -216,7 +217,7 @@
   width: 50%;
   height: 100%;
   gap: 20px;
-  padding: 40px;
+  padding: 40px 20px;
 }
 .project-item__description h3 {
   font-size: 1.5em;
@@ -240,6 +241,7 @@
   color: #403F3D;
   box-shadow: inset -1px 1px 5px 0px #d99878;
   cursor: pointer;
+  transition: 0.2s;
 }
 .project-item__description button a {
   padding: 0;
@@ -252,7 +254,8 @@
 .project-item__img2,
 .project-item__img3,
 .project-item__img4,
-.project-item__img5 {
+.project-item__img5,
+.project-item__img6 {
   width: 50%;
   height: 100%;
   transition: 0.5s;
@@ -281,6 +284,11 @@
   background-image: url(assets/img/project_img5.png);
   background-size: auto 130%;
   background-position: top right;
+}
+.project-item__img6 {
+  background-image: url(assets/img/project_img6.png);
+  background-size: auto 100%;
+  background-position: top center;
 }
 
 .footer {
@@ -358,7 +366,8 @@
   .project-item__img2, 
   .project-item__img3, 
   .project-item__img4, 
-  .project-item__img5 {
+  .project-item__img5,
+  .project-item__img6 {
     display: none;
   }
   .project-item__description h3 {
@@ -369,6 +378,20 @@
   }
   .project-item__description {
     width: 100%;
+}
+}
+@media (max-width: 500px) {
+  .main__photo-background {
+    right: -60px;
+}
+.header__nav-menu {
+  gap: 6.5px;
+  font-size: 15px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.header {
+  padding: 20px 20px 20px 40px;
 }
 }
 @media (max-width: 400px) {
@@ -390,6 +413,7 @@
   .about__buttons button:hover {
     background: #c74312;
     color: white;
+    width: 40%;
   }
   .about__buttons button:disabled:hover {
     background: #fdf9f5;
@@ -410,9 +434,13 @@
   .project-item__img5:hover {
     background-size: auto 110%;
   }
+  .project-item__img6:hover {
+    background-size: auto 110%;
+  }
   .project-item__description button:hover {
     background: #c74312;
     color: white;
+    width: 70%;
   }
   .footer-container__contacts img:hover {
     align-self: flex-start;
